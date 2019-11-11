@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func map1(_ sender: Any) {
@@ -26,23 +26,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Do any additional setup after loading the view, typically from a nib.
     }
-        func loadData(url:String) {
-            Alamofire.request(url).responseData { response in
-                print("All Response Info: \(String(describing: response.value))")
-                if let value = response.value {
-                    self.imageView.image = UIImage(data: value)
-                }
+    func loadData(url:String) {
+        Alamofire.request(url).responseData { response in
+            print("All Response Info: \(String(describing: response.value))")
+            if let value = response.value {
+                self.imageView.image = UIImage(data: value)
+            }
         }
         
-        
         func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+            super.didReceiveMemoryWarning()
+        }
     }
-
-
-}
 }
