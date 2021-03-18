@@ -1,6 +1,6 @@
 # Static-mapYandex
 
-## Знакомство со Static-mapYandex
+## Demo Static-mapYandex
 
 ![](https://github.com/DenAnger/Static-mapYandex/blob/master/Map1.png)
 ![](https://github.com/DenAnger/Static-mapYandex/blob/master/Map2.png)
